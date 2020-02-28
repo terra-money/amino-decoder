@@ -10,13 +10,13 @@ $ amino-decoder start
 * Query with rest server
 ```
 curl -X GET http://127.0.0.1:3000/version
-curl -X POST http://127.0.0.1:3000/decode/tx  -d '{"amino_encoded_tx": "{amino_encoded_tx}"}'
+curl -X POST http://127.0.0.1:3000/decode/tx  -d '{"amino_encoded_tx": "[amino_encoded_tx]"}'
 ```
 
 * Directly decode amino encoded tx
 ```
 $ amino-decoder version
-$ amino-decoder decode tx {amino-encoded-tx}
+$ amino-decoder decode tx [amino-encoded-tx]
 ```
 
 ## How to build
