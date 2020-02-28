@@ -59,7 +59,7 @@ docker-push:
 
 # Run the docker image as a server exposing the service port, mounting configuration from this repo
 docker-run:
-	docker run -p ${PORT}:${PORT} -v ${BINARY}.yaml:/root/.${BINARY}.yaml -it ${DOCKER_IMAGE}:${DOCKER_TAG} ${BINARY} serve
+	docker run -p ${PORT}:${PORT} -v ${BINARY}.yaml:/root/.${BINARY}.yaml -it ${DOCKER_IMAGE}:${DOCKER_TAG} ${BINARY} start
 
 # Remove all the built binaries
 clean:
