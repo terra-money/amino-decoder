@@ -24,3 +24,11 @@ $ amino-decoder decode tx [amino-encoded-tx]
 # it will create build folder and generate binary for each platform (Windows, Mac, Linux)
 $ make  
 ```
+
+## Use docker
+```
+$ docker pull quay.io/terra_project/amino-decoder
+
+# it will execute rest server
+$ make dockder-run
+```
